@@ -1,0 +1,1 @@
+This is simple blog app created using Next.js and mongoDB.
