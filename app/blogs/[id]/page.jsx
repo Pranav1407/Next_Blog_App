@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react'
 
-const page = ({params}) => {
+const Page = ({params}) => {
 
     const [data,setData] = useState();
 
@@ -35,7 +35,7 @@ const page = ({params}) => {
             </div>
             <div className='text-center my-24'>
                 <h1 className='text-2xl sm:text-5xl font-semibold max-w-[700px] mx-auto'>{data.title}</h1>
-                <Image src={data.authorImg} className='mx-auto mt-6 border border-white rounded-full' width={60} height={60} alt='' />
+                <Image src={data.authorImg} className='mx-auto mt-6 border border-white rounded-full' alt='author image' width={60} height={60} alt='' />
                 <p className='mt-1 pb-2 text-lg max-w-[740px] mx-auto'>{data.author}</p>
             </div>
         </div>
@@ -69,4 +69,4 @@ const page = ({params}) => {
   )
 }
 
-export default page
+export default Page
